@@ -13,9 +13,10 @@ int main(){
     //Pass By referance
 
     int arr []= {1,2,3,4,5};
-    changearr(arr,5);
+    int s = 5;
+    changearr(arr,s);
     cout<<"New Array is :"<<endl;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < s; i++)
     {
         // cout<<arr[i]<<""<<endl;
 
