@@ -5,8 +5,10 @@ int main(){
     //define array size !
     int marks[5]={99,100,98,97,96};
 
-    //define array without size !
-    int price[]= {98,99,100};
+    int size = 5;
 
-    cout<<marks[0];
+    for (int i =0 ; i<size; i++){
+        cout<<marks[i]<<endl;
+    }
+    return 0;
 }
