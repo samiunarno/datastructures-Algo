@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Professional Neon Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        height: 100vh;
+        background: #0a0a0a;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .background-wave {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .background-wave svg {
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        opacity: 0.5;
+        animation: moveWave 15s linear infinite alternate;
+      }
+
+      @keyframes moveWave {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate(5%, 5%) rotate(2deg);
+        }
+      }
+
+      .card {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        padding: 30px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .name {
+        font-size: 22px;
+        font-weight: bold;
+        color: #dcdcdc;
+        letter-spacing: 2px;
+        text-align: left;
+      }
+
+      .title {
+        font-size: 18px;
+        color: #c0c0c0;
+        margin-top: auto;
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .socials a {
+        color: #aaa;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+        text-align: right;
+      }
+
+      .socials a:hover {
+        color: white;
+      }
+
+      .skills {
+        display: flex;
+        gap: 10px; /* Reduced gap between icons */
+        margin-top: 15px;
+        align-items: end;
+        justify-content: flex-end; /* Move the icons to the left */
+      }
+
+      .skills img {
+        height: 20px; /* Smaller icon size */
+        width: auto;
+        opacity: 0.5; /* Increased transparency */
+        transition: 0.3s;
+      }
+
+      .skills img:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background-wave">
+      <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill="none"
+          stroke="#00f0ff"
+          stroke-width="2"
+          d="M0,400 C200,200 400,600 600,400 C800,200 1000,600 1200,400 L1200,800 L0,800 Z"
+        />
+        <path
+          fill="none"
+          stroke="#ff00f7"
+          stroke-width="2"
+          d="M0,450 C200,250 400,650 600,450 C800,250 1000,650 1200,450 L1200,800 L0,800 Z"
+        />
+      </svg>
+    </div>
+
+    <div class="card">
+      <div class="name">SAMIUN MAHMUD</div>
+
+      <div>
+        <div class="title">Full Stack Engineer</div>
+        <div class="socials">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">Facebook</a>
+        </div>
+        <div class="skills">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+            alt="Node.js"
+          />
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg"
+            alt="Tailwind CSS"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
