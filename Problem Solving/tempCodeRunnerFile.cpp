@@ -1,14 +1,7 @@
-if(needle.empty()) return 0;
-    int n = haystack.size();
-    int m = needle.size();
-    for(int i = 0; i<= n-m; i++){
-        int j = 0;
-        while(j<m && haystack[i+j] ==needle[j]){
-            j++;
-        }
-        if(j==m){
-            return i;
-        }
-
-    }
-    return -1;
+ // InsertatHead(head, 1);
+    // InsertatHead(head, 2);
+    // InsertatHead(head, 3);
+    // InsertatHead(head, 4);
+    // InsertatHead(head, 5);
+    // InsertatHead(head, 6);
+    // InsertatHead(head, 7);
