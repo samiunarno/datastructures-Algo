@@ -1,4 +1,4 @@
-<h1 align="center">🧠 Data Structures & Algorithms Visual Guide</h1>
+<h1 align="center">🧠 Data Structures & Algorithms Guide</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C++%20%7C%20Python-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Level-Intermediate%20%2F%20Advanced-orange?style=for-the-badge" />
